@@ -43,7 +43,6 @@ async def getAllPlates(reqBody: MaskModel):
     
     
     (locs, preds) = detect_and_predict_mask(img, faceNet, maskNet)
-    print(type(list(preds)))
      
     label = []
     for pred in preds:
