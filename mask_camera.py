@@ -3,7 +3,8 @@ import requests
 import base64
 import cv2
 
-URL = "http://127.0.0.1:8002"
+# URL = "http://127.0.0.1:8002"
+URL = "https://mask.ahmed-amer.tech"
 cam = cv2.VideoCapture(0)
 while True:
     try:
