@@ -50,7 +50,7 @@ async def getAllPlates(reqBody: MaskModel):
         (mask, withoutMask) = pred
         label.append("Mask" if mask > withoutMask else "No Mask")
     
-    return {"te": label}
+    return {"Response": label}
    
 if __name__ == "__main__":
     uvicorn.run("mask_server:app", host="127.0.0.1", port=8002, reload=True)
